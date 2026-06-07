@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Desenvolvimento Ágil</strong><br>
-  AS63C - N13 • 2026/01<br>
+  AS63C - N13 - 2026/01<br>
   Tecnologia em Análise e Desenvolvimento de Sistemas
 </p>
 
@@ -17,61 +17,66 @@
 
 ## Sobre o Projeto
 
-Este projeto tem como tema o universo de **Valorant**, com foco na organização e apresentação de informações relevantes sobre o jogo. A proposta é desenvolver, futuramente, um front-end informativo e visualmente atrativo, voltado para explicar de forma clara os principais elementos desse cenário competitivo.
+Este projeto apresenta um site informativo sobre **Valorant**, voltado para pessoas iniciantes que querem entender o básico do jogo antes de começar a jogar.
 
-A ideia central é reunir em um único espaço conteúdos que ajudem o público a entender melhor o jogo, sua estrutura competitiva e o papel de cada agente dentro das partidas.
+O site funciona como um front-end estático e também como protótipo navegável da solução. Ele reúne informações introdutórias sobre o jogo, plataformas disponíveis e sistema de elos competitivos.
 
 ## Objetivo
 
-O principal objetivo do trabalho é apresentar conteúdos sobre:
+O objetivo do projeto é explicar, de forma simples e visual, os primeiros conceitos que um iniciante precisa conhecer:
 
-- o que é o Valorant;
-- como funciona o sistema de elos;
-- quem são os agentes;
-- quais são as categorias dos agentes;
-- qual é a função de cada classe dentro do jogo.
+- o que é Valorant;
+- como funciona o objetivo de uma partida;
+- onde o jogo está disponível;
+- como funciona a ordem dos elos;
+- qual será o papel da página de agentes no projeto.
 
-## Conteúdos do Projeto
+## Público-Alvo
 
-O projeto abordará temas como:
+O público-alvo são jogadores iniciantes ou pessoas que ainda não conhecem Valorant e querem aprender o básico sem linguagem muito técnica.
 
-- visão geral sobre o jogo Valorant;
-- explicação do sistema de ranqueamento e progressão;
-- apresentação dos agentes disponíveis;
-- classificação dos agentes por função;
-- organização das informações para futura implementação do front-end.
+## Como Abrir o Site
 
-### Categorias de Agentes
+O projeto não usa framework, servidor local ou dependências externas obrigatórias.
 
-| Categoria | Descrição |
-| --- | --- |
-| Duelistas | Agentes com foco em confronto direto, entrada de bomb e jogadas ofensivas. |
-| Iniciadores | Responsáveis por abrir espaço, coletar informações e preparar avanços. |
-| Controladores | Especialistas em controlar áreas do mapa e limitar a visão dos adversários. |
-| Sentinelas | Agentes voltados para defesa, proteção de espaços e suporte estratégico. |
+Para visualizar:
 
-## Status Atual
+1. Baixe ou clone este repositório.
+2. Abra o arquivo `index.html` no navegador.
 
-Nesta etapa, o repositório está sendo estruturado para documentação e planejamento do projeto. O desenvolvimento do **front-end acontecerá posteriormente**, por isso ainda não há protótipos, telas ou arquivos de Figma nesta fase.
+## Estrutura do Repositório
 
-## Organização do Trabalho
+```text
+.
+├── assets/
+├── Casos de Uso/
+├── Requisitos de Sistema/
+├── Requisitos de Usuário/
+├── index.html
+├── style.css
+└── README.md
+```
 
-Para o acompanhamento das atividades da disciplina, o grupo utilizará o GitHub como apoio na gestão do projeto por meio de:
+## Documentação
 
-- `Issues` para registrar tarefas, ideias, discussões e melhorias;
-- `Projects` no formato Kanban para organizar o fluxo de trabalho;
-- labels, responsáveis e marcos para acompanhar a evolução das entregas.
+- [Requisitos Funcionais](Requisitos%20de%20Usu%C3%A1rio/RF.md)
+- [Requisitos Não Funcionais](Requisitos%20de%20Usu%C3%A1rio/RNF.md)
+- [Histórias de Usuário](Requisitos%20de%20Usu%C3%A1rio/HistoriasUsuario.md)
+- [Requisitos de Sistema](Requisitos%20de%20Sistema/Requisitos%20de%20sistema.md)
+- [Descrições dos Casos de Uso](Casos%20de%20Uso/DescricaoCasosDeUso.md)
+- [Registro de IA Generativa](Requisitos%20de%20Usu%C3%A1rio/Registro_IA_Generativa.md)
 
-## Estrutura Inicial do Repositório
+## Gestão do Projeto
 
-Os principais documentos e artefatos previstos para este repositório são:
+- [Issues](https://github.com/lucasppinheiro/Squad-2026.1/issues)
+- [Projects](https://github.com/lucasppinheiro/Squad-2026.1/projects)
 
-- `README.md`
-- Requisitos de Usuário
-- Requisitos de Sistema
-- Organização das tarefas com `Projects` e `Issues`
-- Novos documentos conforme a evolução do projeto
+As tarefas do projeto são organizadas com issues, labels e GitHub Projects em formato Kanban.
 
-## Considerações Finais
+## Protótipo Funcional
 
-Este README apresenta a proposta inicial do grupo para a disciplina de Desenvolvimento Ágil. Novas seções, documentos e detalhes do sistema serão adicionados conforme o avanço do projeto e das próximas entregas.
+O protótipo visual do projeto é o próprio front-end estático disponível neste repositório. Durante a apresentação, o grupo pode demonstrar o site funcionando diretamente pelo arquivo `index.html`.
+
+## Vídeo de Apresentação
+
+O vídeo de apresentação será disponibilizado separadamente no momento da entrega pelo Moodle.

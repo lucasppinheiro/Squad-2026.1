@@ -1,0 +1,35 @@
+name: Validar estrutura do projeto
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validar-estrutura:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Conferir arquivos obrigatórios
+        shell: bash
+        run: |
+          test -f README.md
+          test -f index.html
+          test -f style.css
+          test -d assets
+          test -f "Requisitos de Sistema/Requisitos de sistema.md"
+          test -f "Requisitos de Usuário/RF.md"
+          test -f "Requisitos de Usuário/RNF.md"
+          test -f "Requisitos de Usuário/HistoriasUsuario.md"
+          test -f "Requisitos de Usuário/Registro_IA_Generativa.md"
+          test -f "Casos de Uso/DescricaoCasosDeUso.md"
+
+      - name: Conferir referências principais no HTML
+        shell: bash
+        run: |
+          grep -q 'style.css' index.html
+          grep -q 'assets/' index.html

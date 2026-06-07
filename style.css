@@ -1,0 +1,487 @@
+:root {
+    /* Variáveis de cor usadas no site inteiro. */
+    --bg: #07111d;
+    --bg-soft: #0c1a2a;
+    --panel: #101f30;
+    --panel-light: #14283c;
+    --text: #f4f7fb;
+    --muted: #aeb9c7;
+    --line: rgba(255, 255, 255, 0.13);
+    --accent: #ff3f6c;
+    --accent-dark: #c91f48;
+    --cyan: #49d6ff;
+    --gold: #f0c65a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background:
+        linear-gradient(180deg, #07111d 0%, #081523 45%, #050c16 100%),
+        #07111d;
+    color: var(--text);
+    font-family: Bahnschrift, "Trebuchet MS", "Segoe UI", sans-serif;
+    line-height: 1.6;
+}
+
+body::before {
+    /* Desenha as linhas finas do fundo. */
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    content: "";
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.55;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: min(1080px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.site-header {
+    /* Mantém o cabeçalho preso no topo ao rolar a página. */
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid var(--line);
+    background: rgba(4, 12, 22, 0.94);
+    backdrop-filter: blur(14px);
+}
+
+.header-row {
+    display: flex;
+    min-height: 62px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.brand-logo {
+    /* Junta o símbolo com o nome do Valorant. */
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    outline-offset: 8px;
+}
+
+.brand-mark {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 9px rgba(255, 63, 108, 0.5));
+}
+
+.brand-wordmark {
+    width: 146px;
+    height: auto;
+    filter: brightness(1.55) saturate(1.35) drop-shadow(0 0 9px rgba(255, 63, 108, 0.42));
+}
+
+.nav-links {
+    display: flex;
+    align-items: stretch;
+    gap: 22px;
+}
+
+.nav-links a {
+    position: relative;
+    display: inline-flex;
+    min-height: 62px;
+    align-items: center;
+    color: rgba(244, 247, 251, 0.62);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-links a::after {
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    left: 0;
+    height: 3px;
+    content: "";
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 160ms ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.nav-links a.active {
+    color: var(--text);
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after,
+.nav-links a.active::after {
+    transform: scaleX(1);
+}
+
+.hero-section {
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(135deg, rgba(255, 63, 108, 0.12), rgba(73, 214, 255, 0.06) 42%, transparent 72%);
+}
+
+.hero-grid {
+    /* Divide a primeira seção em duas colunas. */
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(230px, 320px);
+    gap: clamp(24px, 5vw, 58px);
+    align-items: center;
+    padding: clamp(50px, 8vw, 86px) 0;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.12;
+}
+
+h1 {
+    max-width: 760px;
+    margin-bottom: 18px;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 900;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: clamp(1.55rem, 3.5vw, 2.4rem);
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 1.08rem;
+}
+
+p {
+    color: var(--muted);
+}
+
+.hero-copy p:last-child {
+    max-width: 62ch;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+.hero-card {
+    display: grid;
+    gap: 12px;
+    padding: 26px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(7, 17, 29, 0.72);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.26);
+}
+
+.hero-card img {
+    width: 92px;
+    filter: drop-shadow(0 0 18px rgba(255, 63, 108, 0.42));
+}
+
+.hero-card p {
+    margin: 8px 0 0;
+    color: var(--cyan);
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.hero-card strong {
+    max-width: 18ch;
+    font-size: 1.35rem;
+    line-height: 1.16;
+}
+
+.intro-section,
+.ranks-section {
+    padding: clamp(48px, 7vw, 76px) 0;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 24px;
+}
+
+.section-heading p:last-child {
+    margin-bottom: 0;
+}
+
+.text-panel {
+    /* Deixa textos maiores dentro de uma caixa. */
+    max-width: 860px;
+    margin-bottom: 22px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(16, 31, 48, 0.72);
+}
+
+.text-panel p:last-child {
+    margin-bottom: 0;
+}
+
+.basics-grid {
+    /* Organiza os três cards do básico. */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.basics-grid article {
+    min-height: 178px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(20, 40, 60, 0.9), rgba(12, 26, 42, 0.86));
+}
+
+.basics-grid span {
+    display: inline-flex;
+    margin-bottom: 24px;
+    color: var(--gold);
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.basics-grid p {
+    margin-bottom: 0;
+}
+
+.platform-band {
+    border-block: 1px solid var(--line);
+    background: rgba(16, 31, 48, 0.6);
+}
+
+.platform-grid {
+    /* Coloca texto e lista de plataformas lado a lado. */
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 390px);
+    gap: clamp(24px, 5vw, 52px);
+    align-items: center;
+    padding: clamp(42px, 7vw, 70px) 0;
+}
+
+.platform-grid p:last-child {
+    max-width: 60ch;
+    margin-bottom: 0;
+}
+
+.platform-list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.platform-list li {
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    background: rgba(7, 17, 29, 0.75);
+    color: var(--text);
+    font-weight: 900;
+}
+
+.rank-showcase {
+    /* Espaço da imagem dos elos. */
+    margin: 30px 0 26px;
+}
+
+.rank-showcase img {
+    width: min(100%, 1040px);
+    margin: 0 auto;
+    filter: drop-shadow(0 22px 34px rgba(0, 0, 0, 0.36));
+}
+
+.rank-list {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(84px, 1fr));
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rank-list li {
+    padding: 12px 10px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(16, 31, 48, 0.72);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.rank-list li:last-child {
+    border-color: rgba(240, 198, 90, 0.62);
+    color: var(--gold);
+}
+
+.site-footer {
+    border-top: 1px solid var(--line);
+    background: rgba(4, 12, 22, 0.9);
+}
+
+.footer-row {
+    display: flex;
+    min-height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.site-footer a {
+    color: var(--cyan);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+    color: var(--text);
+}
+
+@media (max-width: 860px) {
+    /* Em telas menores, as colunas viram uma embaixo da outra. */
+    .hero-grid,
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        grid-template-columns: 86px 1fr;
+        align-items: center;
+    }
+
+    .hero-card p {
+        margin-top: 0;
+    }
+
+    .basics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rank-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    /* Ajustes para telas bem pequenas. */
+    .container {
+        width: min(100% - 24px, 1080px);
+    }
+
+    .header-row {
+        min-height: 58px;
+        gap: 12px;
+    }
+
+    .brand-mark {
+        width: 30px;
+        height: 30px;
+    }
+
+    .brand-wordmark {
+        width: 118px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        min-height: 58px;
+        font-size: 0.68rem;
+        letter-spacing: 0.02em;
+    }
+
+    h1 {
+        font-size: clamp(1.85rem, 9.5vw, 2.55rem);
+    }
+
+    .hero-grid {
+        padding: 42px 0;
+    }
+
+    .hero-card {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .hero-card img {
+        width: 64px;
+    }
+
+    .hero-card strong {
+        max-width: none;
+        font-size: 1.14rem;
+    }
+
+    .text-panel,
+    .basics-grid article {
+        padding: 18px;
+    }
+
+    .footer-row {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+    }
+}
