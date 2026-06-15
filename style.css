@@ -82,22 +82,22 @@ a {
     /* Junta o símbolo com o nome do Valorant. */
     display: inline-flex;
     align-items: center;
-    gap: 9px;
+    gap: 7px;
     text-decoration: none;
     outline-offset: 8px;
 }
 
 .brand-mark {
-    width: 34px;
-    height: 34px;
+    width: 29px;
+    height: 29px;
     object-fit: contain;
-    filter: drop-shadow(0 0 9px rgba(255, 63, 108, 0.5));
+    filter: drop-shadow(0 0 5px rgba(255, 63, 108, 0.32));
 }
 
 .brand-wordmark {
-    width: 146px;
+    width: 136px;
     height: auto;
-    filter: brightness(1.55) saturate(1.35) drop-shadow(0 0 9px rgba(255, 63, 108, 0.42));
+    filter: brightness(1.32) saturate(1.14) drop-shadow(0 0 5px rgba(255, 63, 108, 0.24));
 }
 
 .nav-links {
@@ -333,12 +333,17 @@ p {
 .rank-showcase {
     /* Espaço da imagem dos elos. */
     margin: 30px 0 26px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(4, 12, 22, 0.52);
 }
 
 .rank-showcase img {
     width: min(100%, 1040px);
     margin: 0 auto;
-    filter: drop-shadow(0 22px 34px rgba(0, 0, 0, 0.36));
+    opacity: 0.93;
+    mix-blend-mode: screen;
+    filter: contrast(1.04) drop-shadow(0 18px 28px rgba(0, 0, 0, 0.28));
 }
 
 .rank-list {
@@ -436,12 +441,12 @@ p {
     }
 
     .brand-mark {
-        width: 30px;
-        height: 30px;
+        width: 27px;
+        height: 27px;
     }
 
     .brand-wordmark {
-        width: 118px;
+        width: 110px;
     }
 
     .nav-links {
