@@ -849,18 +849,38 @@ p {
     opacity: 1;
 }
 
+.agent-card[data-agent="astra"] .agent-photo {
+    transform: scale(1.12);
+    transform-origin: center bottom;
+}
+
+.agent-card[data-agent="raze"] .agent-photo {
+    transform: scale(1.16);
+    transform-origin: center bottom;
+}
+
+.agent-card[data-agent="tejo"] .agent-photo {
+    transform: scale(1.12);
+    transform-origin: center bottom;
+}
+
+.agent-card[data-agent="vyse"] .agent-photo {
+    transform: scale(1.12);
+    transform-origin: center bottom;
+}
+
 .agent-card[data-agent="waylay"] .agent-photo {
-    transform: scale(1.42);
+    transform: scale(1.55);
     transform-origin: center bottom;
 }
 
 .agent-card[data-agent="miks"] .agent-photo {
-    transform: scale(1.18);
+    transform: scale(1.34);
     transform-origin: center bottom;
 }
 
 .agent-card[data-agent="veto"] .agent-photo {
-    transform: scale(1.22);
+    transform: scale(1.38);
     transform-origin: center bottom;
 }
 
