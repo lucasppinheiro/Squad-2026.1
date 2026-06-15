@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant | Agentes</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="brand-logo" href="index.html" aria-label="Valorant - início">
+                <img class="brand-mark" src="assets/valorant-mark-transparent.png" alt="">
+                <img class="brand-wordmark" src="assets/valorant-logo-transparent.png" alt="Valorant">
+            </a>
+            <nav class="nav-links" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a class="active" href="agentes.html">Agentes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="agents-hero">
+            <div class="container">
+                <p class="eyebrow">Elenco completo</p>
+                <h1>Conheça os agentes</h1>
+                <p>Cada agente tem habilidades únicas que definem como você joga. Escolha o seu estilo e domine o campo.
+                </p>
+
+                <div class="role-filter" role="group" aria-label="Filtrar por função">
+                    <button class="role-btn active" data-filter="todos">Todos</button>
+                    <button class="role-btn" data-filter="duelista">
+                        <span class="role-dot dot-duelista"></span> Duelistas
+                    </button>
+                    <button class="role-btn" data-filter="iniciador">
+                        <span class="role-dot dot-iniciador"></span> Iniciadores
+                    </button>
+                    <button class="role-btn" data-filter="controlador">
+                        <span class="role-dot dot-controlador"></span> Controladores
+                    </button>
+                    <button class="role-btn" data-filter="sentinela">
+                        <span class="role-dot dot-sentinela"></span> Sentinelas
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="agents-page container">
+
+            <section class="role-section" data-role-section="duelista" aria-labelledby="role-duelista">
+                <div class="role-header">
+                    <div class="role-title-group">
+                        <p class="role-label">
+                            <span class="role-dot dot-duelista"></span>
+                            Função
+                        </p>
+                        <h2 id="role-duelista" style="color:var(--text)">Duelistas</h2>
+                        <p class="role-desc">Líderes de combate, focados em conseguir eliminações e abrir caminho para a equipe.</p>
+                    </div>
+                    <span class="scroll-hint" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Role para ver mais
+                    </span>
+                </div>
+
+                <div class="agents-track-wrapper">
+                    <div class="agents-track" role="list">
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="phoenix" data-name="Phoenix"
+                            data-realname="Jamie Adeyemi" data-role="duelista"
+                            data-bio="Phoenix é um agente britânico com o poder de controlar o fogo. Ele pode se curar com suas chamas e até ressuscitar no mesmo local após ser eliminado. Versátil e agressivo, é ideal para quem gosta de jogar no limiar do risco."
+                            data-ab1key="Q" data-ab1name="Blaze"
+                            data-ab1desc="Lança uma parede de fogo que bloqueia visão e cura Phoenix ao tocá-la."
+                            data-ab2key="E" data-ab2name="Hot Hands"
+                            data-ab2desc="Arremessa uma bola de fogo que explode e cria zona de fogo que cura Phoenix."
+                            data-ab3key="C" data-ab3name="Curveball"
+                            data-ab3desc="Flash que dobra em volta de cantos, cegando inimigos." data-ab4key="X"
+                            data-ab4name="Run it Back"
+                            data-ab4desc="Marca sua posição atual. Se morrer durante a ult, renasce com HP parcial nesse ponto."
+                            aria-label="Ver detalhes de Phoenix">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Phoenix.png" alt="Phoenix">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Phoenix</p>
+                                <p class="agent-real-name">Jamie Adeyemi · Reino Unido</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="jett" data-name="Jett"
+                            data-realname="Sunwoo Han" data-role="duelista"
+                            data-bio="Jett é uma agente sul-coreana de movimentação ágil. Sua habilidade de usar os ventos a seu favor permite que ela entre e saia de confrontos muito antes que os inimigos possam reagir. É uma das agentes mais escolhidas em alto nível de jogo."
+                            data-ab1key="Q" data-ab1name="Correntes de Névoa"
+                            data-ab1desc="Joga correntes de fumaça que bloqueiam a visão pelos lados." data-ab2key="E"
+                            data-ab2name="Tailwind"
+                            data-ab2desc="Jett avança rapidamente na direção em que está se movendo." data-ab3key="C"
+                            data-ab3name="Updraft" data-ab3desc="Propulsiona Jett para cima." data-ab4key="X"
+                            data-ab4name="Blade Storm"
+                            data-ab4desc="Equipa facas de precisão letais. Atirar com precisão restaura as facas."
+                            aria-label="Ver detalhes de Jett">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Jett.png" alt="Jett">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Jett</p>
+                                <p class="agent-real-name">Sunwoo Han · Coreia do Sul</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="reyna" data-name="Reyna"
+                            data-realname="Zyanya Mondragón" data-role="duelista"
+                            data-bio="Reyna é uma agente mexicana que se alimenta do caos do combate. Cada inimigo que ela abate deixa uma alma que ela pode consumir para se curar ou se tornar temporariamente invulnerável. Difícil de parar quando está em ritmo."
+                            data-ab1key="Q" data-ab1name="Devorar"
+                            data-ab1desc="Consome uma alma de inimigo para se curar rapidamente." data-ab2key="E"
+                            data-ab2name="Descartar"
+                            data-ab2desc="Consome uma alma para ficar brevemente invulnerável e invisível."
+                            data-ab3key="C" data-ab3name="Leer"
+                            data-ab3desc="Lança um orbe que cega todos os inimigos que olharem para ele."
+                            data-ab4key="X" data-ab4name="Empress"
+                            data-ab4desc="Ativa frenesi total: recarga instantânea, disparo mais rápido e roubo de vida em kills."
+                            aria-label="Ver detalhes de Reyna">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Reyna.png" alt="Reyna">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Reyna</p>
+                                <p class="agent-real-name">Zyanya Mondragón · México</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="raze" data-name="Raze"
+                            data-realname="Tayane Alves" data-role="duelista"
+                            data-bio="Raze é uma agente brasileira de Salvador que ama explosivos. Suas habilidades causam dano em área massivo e ela usa uma granada de propulsão para se mover com velocidade surpreendente."
+                            data-ab1key="Q" data-ab1name="Boom Bot"
+                            data-ab1desc="Lança um robô que persegue inimigos e explode ao alcançá-los." data-ab2key="E"
+                            data-ab2name="Blast Pack"
+                            data-ab2desc="Lança uma mochila explosiva. Pode ser detonada para propulsionar Raze no ar."
+                            data-ab3key="C" data-ab3name="Paint Shells"
+                            data-ab3desc="Granada em cluster que explode em múltiplas sub-granadas." data-ab4key="X"
+                            data-ab4name="Showstopper"
+                            data-ab4desc="Equipa um lançador de foguetes. Um único disparo causa dano massivo em área."
+                            aria-label="Ver detalhes de Raze">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Raze.png" alt="Raze">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Raze</p>
+                                <p class="agent-real-name">Tayane Alves · Brasil</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="yoru" data-name="Yoru"
+                            data-realname="Ryo Kiritani" data-role="duelista"
+                            data-bio="Yoru é um agente japonês mestre em ilusões. Ele usa portais de teletransporte, clones falsos e pode até se tornar intangível, tornando impossível prever seus movimentos."
+                            data-ab1key="Q" data-ab1name="Blindside"
+                            data-ab1desc="Flash que atravessa paredes e ricocheteia antes de explodir." data-ab2key="E"
+                            data-ab2name="Gatecrash"
+                            data-ab2desc="Lança âncora de portal; ative para se teletransportar para ela."
+                            data-ab3key="C" data-ab3name="Fakeout"
+                            data-ab3desc="Envia um clone de passos de Yoru que explode ao contato com inimigos."
+                            data-ab4key="X" data-ab4name="Dimensional Drift"
+                            data-ab4desc="Yoru entra em outra dimensão: invisível, intangível e capaz de ver pelo mapa."
+                            aria-label="Ver detalhes de Yoru">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Yoru.png" alt="Yoru">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Yoru</p>
+                                <p class="agent-real-name">Ryo Kiritani · Japão</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="neon" data-name="Neon"
+                            data-realname="Tala Nicole Dimaapi" data-role="duelista"
+                            data-bio="Neon é uma filipina com a capacidade de converter energia bioelétrica em velocidade extrema e descargas de eletricidade. Ela é a agente mais veloz do jogo, capaz de driblar inimigos com sprints e slides."
+                            data-ab1key="Q" data-ab1name="Relay Bolt"
+                            data-ab1desc="Lança um parafuso elétrico que quica e atordoa inimigos na área."
+                            data-ab2key="E" data-ab2name="High Gear"
+                            data-ab2desc="Ativa sprint de alta velocidade e slide. Recarrega com kills." data-ab3key="C"
+                            data-ab3name="Fast Lane"
+                            data-ab3desc="Lança duas paredes de eletricidade para frente, bloqueando visão lateral."
+                            data-ab4key="X" data-ab4name="Overdrive"
+                            data-ab4desc="Libera bioeletricidade máxima: raio de precisão contínuo que recarrega com kills."
+                            aria-label="Ver detalhes de Neon">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Neon.png" alt="Neon">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Neon</p>
+                                <p class="agent-real-name">Tala Dimaapi · Filipinas</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="iso" data-name="Iso"
+                            data-realname="Zhao Yu Li" data-role="duelista"
+                            data-bio="Iso é um mercenário chinês que entra em um estado de fluxo para desmantelar seus inimigos. Ele reconfigura o campo de batalha com sua energia prismática, isolando oponentes em duelos mortais."
+                            data-ab1key="Q" data-ab1name="Undercut"
+                            data-ab1desc="Lança um dardo molecular para frente, aplicando fragilidade aos jogadores tocados."
+                            data-ab2key="E" data-ab2name="Double Tap"
+                            data-ab2desc="Inicia um temporizador de foco. Ao abater inimigos, gera um orbe; atirar nele concede um escudo que absorve um dano."
+                            data-ab3key="C" data-ab3name="Contingency"
+                            data-ab3desc="Lança uma parede indestrutível de energia prismática para frente, bloqueando balas."
+                            data-ab4key="X" data-ab4name="Kill Contract"
+                            data-ab4desc="Lança uma coluna de energia, puxando você e o primeiro inimigo atingido para um duelo 1x1 em uma arena interdimensional."
+                            aria-label="Ver detalhes de Iso">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Iso.png" alt="Iso">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Iso</p>
+                                <p class="agent-real-name">Zhao Yu Li · China</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="role-section" data-role-section="iniciador" aria-labelledby="role-iniciador">
+                <div class="role-header">
+                    <div class="role-title-group">
+                        <p class="role-label">
+                            <span class="role-dot dot-iniciador"></span>
+                            Função
+                        </p>
+                        <h2 id="role-iniciador" style="color:var(--text)">Iniciadores</h2>
+                        <p class="role-desc">Especialistas em obter informações, desabilitar inimigos e ajudar a dominar áreas do mapa.</p>
+                    </div>
+                    <span class="scroll-hint" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Role para ver mais
+                    </span>
+                </div>
+                <div class="agents-track-wrapper">
+                    <div class="agents-track" role="list">
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="sova" data-name="Sova"
+                            data-realname="Sasha Novikov" data-role="iniciador"
+                            data-bio="Sova é um caçador criado na Rússia que usa tecnologia de ponta para rastrear e revelar inimigos onde quer que se escondam. Seu arco e suas flechas de ricochete são ferramentas de informação incomparáveis."
+                            data-ab1key="Q" data-ab1name="Shock Bolt"
+                            data-ab1desc="Flecha elétrica que pode ser carregada para ricochetear e causa dano."
+                            data-ab2key="E" data-ab2name="Owl Drone"
+                            data-ab2desc="Drone de reconhecimento que pode marcar inimigos com uma flecha."
+                            data-ab3key="C" data-ab3name="Recon Bolt"
+                            data-ab3desc="Flecha rastreadora que revela inimigos próximos repetidamente."
+                            data-ab4key="X" data-ab4name="Hunter's Fury"
+                            data-ab4desc="Três rajadas de energia que atravessam paredes e revelam inimigos atingidos."
+                            aria-label="Ver detalhes de Sova">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Sova.png" alt="Sova">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Sova</p>
+                                <p class="agent-real-name">Sasha Novikov · Rússia</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="breach" data-name="Breach"
+                            data-realname="Erik Torsten" data-role="iniciador"
+                            data-bio="Breach é um sueco com braços biônicos poderosos que liberam impulsos sísmicos através de paredes. Ele atordoa, cega e empurra inimigos por estruturas sólidas, sendo um iniciador devastador em mãos coordenadas."
+                            data-ab1key="Q" data-ab1name="Flashpoint"
+                            data-ab1desc="Flash rápido que atravessa paredes e cega inimigos do outro lado."
+                            data-ab2key="E" data-ab2name="Fault Line"
+                            data-ab2desc="Tremor carregado que atravessa terreno e atordoa inimigos na área."
+                            data-ab3key="C" data-ab3name="Aftershock"
+                            data-ab3desc="Impulso que atravessa paredes e causa dano pesado a inimigos do outro lado."
+                            data-ab4key="X" data-ab4name="Rolling Thunder"
+                            data-ab4desc="Sismo em cascata que percorre um cone à frente, atordoando e derrubando inimigos."
+                            aria-label="Ver detalhes de Breach">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <img class="agent-photo" src="assets/agentes/Breach.png" alt="Breach">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Breach</p>
+                                <p class="agent-real-name">Erik Torsten · Suécia</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="skye" data-name="Skye"
+                            data-realname="Kirra Foster" data-role="iniciador"
+                            data-bio="Skye é uma australiana com conexão profunda com a natureza. Ela invoca criaturas selvagens para explorar e atordoar inimigos, e pode até curar aliados com sua luz verde."
+                            data-ab1key="Q" data-ab1name="Guiding Light"
+                            data-ab1desc="Arremessa um falcão que pode ser ativado para criar um flash que cega inimigos."
+                            data-ab2key="E" data-ab2name="Trailblazer"
+                            data-ab2desc="Controla um tigre que pode atordoar inimigos ao pular sobre eles."
+                            data-ab3key="C" data-ab3name="Regrowth"
+                            data-ab3desc="Cura aliados próximos dentro do campo de visão enquanto o canal estiver ativo."
+                            data-ab4key="X" data-ab4name="Seekers"
+                            data-ab4desc="Libera três buscadores que rastreiam os inimigos mais próximos e os cegam."
+                            aria-label="Ver detalhes de Skye">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Skye.png" alt="Skye">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Skye</p>
+                                <p class="agent-real-name">Kirra Foster · Austrália</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="kayo" data-name="KAY/O"
+                            data-realname="Máquina de Guerra" data-role="iniciador"
+                            data-bio="KAY/O é um robô de guerra vindo do futuro, construído com um único propósito: suprimir as habilidades de Radiantes inimigos. Suas facas e granadas podem anular completamente as habilidades dos adversários."
+                            data-ab1key="Q" data-ab1name="FLASH/drive"
+                            data-ab1desc="Flash que pode ser arremessado rápido ou carregado para explodir depois."
+                            data-ab2key="E" data-ab2name="ZERO/point"
+                            data-ab2desc="Faca que ao cravar no chão suprime as habilidades de inimigos próximos."
+                            data-ab3key="C" data-ab3name="FRAG/ment"
+                            data-ab3desc="Granada de fragmento que explode múltiplas vezes na área." data-ab4key="X"
+                            data-ab4name="NULL/cmd"
+                            data-ab4desc="Suprime inimigos próximos. Fica em modo instável se morrer; pode ser revivido."
+                            aria-label="Ver detalhes de KAY/O">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/KAYO.png" alt="KAY/O">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">KAY/O</p>
+                                <p class="agent-real-name">Máquina de Guerra</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="fade" data-name="Fade"
+                            data-realname="Hazal Eyletmez" data-role="iniciador"
+                            data-bio="Fade é uma turca que usa pesadelos e trevas para rastrear e aterrorizar seus inimigos. Ela invoca sombras de seus próprios medos para revelar e debilitar qualquer um que ouse se esconder."
+                            data-ab1key="Q" data-ab1name="Seize"
+                            data-ab1desc="Lança uma orbe de escuridão que aprisiona inimigos na área." data-ab2key="E"
+                            data-ab2name="Haunt"
+                            data-ab2desc="Invoca um olho que revela e marca inimigos visíveis, deixando rastro."
+                            data-ab3key="C" data-ab3name="Prowler"
+                            data-ab3desc="Criatura sombria que persegue inimigos e os cega ao alcançá-los."
+                            data-ab4key="X" data-ab4name="Nightfall"
+                            data-ab4desc="Onda de escuridão que surdeia, deixa rastro e aplica debuffs nos atingidos."
+                            aria-label="Ver detalhes de Fade">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Fade.png" alt="Fade">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Fade</p>
+                                <p class="agent-real-name">Hazal Eyletmez · Turquia</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="gekko" data-name="Gekko"
+                            data-realname="Mateo Armendáriz" data-role="iniciador"
+                            data-bio="Gekko lidera um grupo unido de criaturas calamitosas. Seus amigos avançam para espalhar os inimigos, e Gekko os persegue para reagrupá-los e atacar novamente."
+                            data-ab1key="Q" data-ab1name="Wingman"
+                            data-ab1desc="Envia Wingman para buscar inimigos com atordoamento ou plantar/desarmar a Spike."
+                            data-ab2key="E" data-ab2name="Dizzy"
+                            data-ab2desc="Lança Dizzy pelo ar para atirar plasma em inimigos, cegando-os. O glóbulo pode ser recolhido."
+                            data-ab3key="C" data-ab3name="Mosh Pit"
+                            data-ab3desc="Lança Mosh, criando uma grande área verde que explode após um atraso."
+                            data-ab4key="X" data-ab4name="Thrash"
+                            data-ab4desc="Guia Thrash; ative para explodir e deter inimigos. O glóbulo pode ser recolhido para reuso."
+                            aria-label="Ver detalhes de Gekko">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Gekko.png" alt="Gekko">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Gekko</p>
+                                <p class="agent-real-name">Mateo Armendáriz · Estados Unidos</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="tejo" data-name="Tejo"
+                            data-realname="Santiago Rivera" data-role="iniciador"
+                            data-bio="Vindo da Colômbia, Tejo é um homem de ação que usa uma abordagem explosiva para expulsar os inimigos e dominar espaços. Como ele mesmo diz: 'Eu os expulso. Você os finaliza.'"
+                            data-ab1key="Q" data-ab1name="Entrega Especial"
+                            data-ab1desc="Equipa e controla um drone furtivo. Ative para acionar um pulso que causa Supressão e revela inimigos."
+                            data-ab2key="E" data-ab2name="Rajada Guiada"
+                            data-ab2desc="Abre o mapa tático para lançar projéteis autônomos em até dois locais-alvo selecionados."
+                            data-ab3key="C" data-ab3name="Drone Furtivo"
+                            data-ab3desc="Lança uma granada adesiva que gruda e explode, causando Concussão a qualquer alvo atingido."
+                            data-ab4key="X" data-ab4name="Armagedon"
+                            data-ab4desc="Libera uma onda de explosões ao longo de um trecho selecionado, forçando a movimentação inimiga."
+                            aria-label="Ver detalhes de Tejo">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Tejo.png" alt="Tejo">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Tejo</p>
+                                <p class="agent-real-name">Santiago Rivera · Colômbia</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="role-section" data-role-section="controlador" aria-labelledby="role-controlador">
+                <div class="role-header">
+                    <div class="role-title-group">
+                        <p class="role-label">
+                            <span class="role-dot dot-controlador"></span>
+                            Função
+                        </p>
+                        <h2 id="role-controlador" style="color:var(--text)">Controladores</h2>
+                        <p class="role-desc">Especialistas em bloquear a visão dos inimigos e controlar o espaço do mapa com utilitários.</p>
+                    </div>
+                    <span class="scroll-hint" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Role para ver mais
+                    </span>
+                </div>
+                <div class="agents-track-wrapper">
+                    <div class="agents-track" role="list">
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="brimstone"
+                            data-name="Brimstone" data-realname="Liam Byrne" data-role="controlador"
+                            data-bio="Brimstone é um veterano americano que usa um ombro-tech orbital para lançar fumaças, estimular aliados e chamar strikes do céu. É o controlador mais fácil para iniciantes aprenderem."
+                            data-ab1key="Q" data-ab1name="Incendiary"
+                            data-ab1desc="Lança uma granada de incêndio que cria uma zona de fogo persistente."
+                            data-ab2key="E" data-ab2name="Stim Beacon"
+                            data-ab2desc="Coloca uma baliza que dá buff de rapidez para aliados próximos."
+                            data-ab3key="C" data-ab3name="Sky Smoke"
+                            data-ab3desc="Pelo minimapa, escolhe pontos no mapa para lançar fumaças orbitais."
+                            data-ab4key="X" data-ab4name="Orbital Strike"
+                            data-ab4desc="Chama um laser orbital que causa dano massivo contínuo em uma área."
+                            aria-label="Ver detalhes de Brimstone">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Brimstone.png" alt="Brimstone">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Brimstone</p>
+                                <p class="agent-real-name">Liam Byrne · EUA</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="viper" data-name="Viper"
+                            data-realname="Sabine Callas" data-role="controlador"
+                            data-bio="Viper é uma cientista americana especialista em venenos e produtos químicos. Suas fumaças tóxicas reduzem o HP máximo dos inimigos, tornando-a letal em mapas onde o terreno pode ser controlado por gases."
+                            data-ab1key="Q" data-ab1name="Poison Cloud"
+                            data-ab1desc="Lança dispositivo que emite fumaça tóxica. Pode ser reativado durante a rodada."
+                            data-ab2key="E" data-ab2name="Toxic Screen"
+                            data-ab2desc="Ativa parede de gás longa que bloqueia visão e envenena quem atravessa."
+                            data-ab3key="C" data-ab3name="Snake Bite"
+                            data-ab3desc="Granada de ácido, causando dano e reduzindo o HP máximo dos inimigos."
+                            data-ab4key="X" data-ab4name="Viper's Pit"
+                            data-ab4desc="Área gigante em névoa venenosa. Inimigos dentro ficam visíveis para Viper."
+                            aria-label="Ver detalhes de Viper">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Viper.png" alt="Viper">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Viper</p>
+                                <p class="agent-real-name">Sabine Callas · EUA</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="omen" data-name="Omen"
+                            data-realname="Desconhecido" data-role="controlador"
+                            data-bio="Omen é uma entidade sombria de origem misteriosa. Ele se move nas sombras, cega inimigos com flashes psíquicas e pode se teletransportar pelo mapa inteiro."
+                            data-ab1key="Q" data-ab1name="Paranoia"
+                            data-ab1desc="Projétil invisível de sombra que surdeia e cega qualquer inimigo atingido."
+                            data-ab2key="E" data-ab2name="Dark Cover"
+                            data-ab2desc="Lança orbes de fumaça a longa distância pelo minimapa." data-ab3key="C"
+                            data-ab3name="Shrouded Step"
+                            data-ab3desc="Teletransporte de curto alcance — ideal para flancos e reposicionamento."
+                            data-ab4key="X" data-ab4name="From the Shadows"
+                            data-ab4desc="Teletransporte para qualquer ponto do mapa. Pode ser interrompido por inimigos."
+                            aria-label="Ver detalhes de Omen">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Omen.png" alt="Omen">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Omen</p>
+                                <p class="agent-real-name">Desconhecido</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="astra" data-name="Astra"
+                            data-realname="Efia Danso" data-role="controlador"
+                            data-bio="Astra é uma ghanense que entra em forma astral para colocar estrelas pelo mapa e depois ativá-las como fumaças, puxões gravitacionais ou explosões. É o controlador mais complexo do jogo."
+                            data-ab1key="Q" data-ab1name="Nebula / Dissipate"
+                            data-ab1desc="Ativa estrela como fumaça ou a dissipa brevemente para criar falsa cobertura."
+                            data-ab2key="E" data-ab2name="Gravity Well"
+                            data-ab2desc="Ativa estrela como poço gravitacional que puxa e fragiliza inimigos."
+                            data-ab3key="C" data-ab3name="Nova Pulse"
+                            data-ab3desc="Ativa estrela como pulso que atordoa inimigos próximos." data-ab4key="X"
+                            data-ab4name="Cosmic Divide"
+                            data-ab4desc="Parede infinita que atravessa o mapa inteiro, bloqueando balas e sons."
+                            aria-label="Ver detalhes de Astra">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Astra.png" alt="Astra">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Astra</p>
+                                <p class="agent-real-name">Efia Danso · Gana</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="harbor" data-name="Harbor"
+                            data-realname="Varun Batra" data-role="controlador"
+                            data-bio="Vindo da Índia, Harbor domina o campo de batalha empunhando tecnologia ancestral com controle sobre a água. Ele desencadeia corredeiras espumantes e ondas esmagadoras para proteger aliados."
+                            data-ab1key="Q" data-ab1name="Cove"
+                            data-ab1desc="Lança uma esfera de água que bloqueia visão e absorve danos de balas."
+                            data-ab2key="E" data-ab2name="High Tide"
+                            data-ab2desc="Guia uma parede de água direcional no chão. Inimigos atingidos são desacelerados."
+                            data-ab3key="C" data-ab3name="Cascade"
+                            data-ab3desc="Lança uma onda de água que avança e atravessa paredes, desacelerando os adversários."
+                            data-ab4key="X" data-ab4name="Reckoning"
+                            data-ab4desc="Invoca uma poça de gêiseres no chão. Inimigos são alvos de sucessivos ataques concussivos."
+                            aria-label="Ver detalhes de Harbor">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Harbor.png" alt="Harbor">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Harbor</p>
+                                <p class="agent-real-name">Varun Batra · Índia</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="clove" data-name="Clove"
+                            data-realname="Ollie Baird" data-role="controlador"
+                            data-bio="A jovem imortal Clove traz a confusão direto do além-túmulo. Clove desafia a morte e continua controlando o campo de batalha escocês mesmo após cair em combate."
+                            data-ab1key="Q" data-ab1name="Meddle"
+                            data-ab1desc="Lança um fragmento de essência da imortalidade que deteriora temporariamente os alvos."
+                            data-ab2key="E" data-ab2name="Ruse"
+                            data-ab2desc="Abre o mapa tático para definir fumaças. Pode ser usado mesmo após Clove ser eliminade."
+                            data-ab3key="C" data-ab3name="Pick-Me-Up"
+                            data-ab3desc="Absorve a energia de um inimigo caído abatido, concedendo velocidade e vida extras."
+                            data-ab4key="X" data-ab4name="Not Dead Yet"
+                            data-ab4desc="Ressuscita temporariamente após morrer. É necessário abater ou ganhar assistência para permanecer vive."
+                            aria-label="Ver detalhes de Clove">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Clove.png" alt="Clove">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Clove</p>
+                                <p class="agent-real-name">Ollie Baird · Escócia</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="role-section" data-role-section="sentinela" aria-labelledby="role-sentinela">
+                <div class="role-header">
+                    <div class="role-title-group">
+                        <p class="role-label">
+                            <span class="role-dot dot-sentinela"></span>
+                            Função
+                        </p>
+                        <h2 id="role-sentinela" style="color:var(--text)">Sentinelas</h2>
+                        <p class="role-desc">Defensores focados em bloquear rotas, segurar o avanço inimigo e proteger áreas plantadas..</p>
+                    </div>
+                    <span class="scroll-hint" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Role para ver mais
+                    </span>
+                </div>
+                <div class="agents-track-wrapper">
+                    <div class="agents-track" role="list">
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="killjoy" data-name="Killjoy"
+                            data-realname="Klara Böhringer" data-role="sentinela"
+                            data-bio="Killjoy é uma engenheira alemã que constrói gadgets poderosos para defender sites sozinha. Suas torretas, granadas e lockdown a tornam o pesadelo de qualquer push adversário."
+                            data-ab1key="Q" data-ab1name="Alarmbot"
+                            data-ab1desc="Robô que detecta e persegue inimigos, explodindo e aplicando debuff."
+                            data-ab2key="E" data-ab2name="Turret"
+                            data-ab2desc="Pastilha que atira em inimigos em um cone de 180°, revelando sua posição."
+                            data-ab3key="C" data-ab3name="Nanoswarm"
+                            data-ab3desc="Granada escondível que libera um enxame de nanobots causando dano."
+                            data-ab4key="X" data-ab4name="Lockdown"
+                            data-ab4desc="Dispositivo que após alguns segundos aprisiona todos os inimigos no raio de ação."
+                            aria-label="Ver detalhes de Killjoy">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Killjoy.png" alt="Killjoy">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Killjoy</p>
+                                <p class="agent-real-name">Klara Böhringer · Alemanha</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="cypher" data-name="Cypher"
+                            data-realname="Amir El Amari" data-role="sentinela"
+                            data-bio="Cypher é um espião marroquino obcecado por informação e segredos. Suas câmeras e armadilhas criam uma rede de vigilância que nenhum inimigo pode passar sem ser detectado."
+                            data-ab1key="Q" data-ab1name="Cyber Cage"
+                            data-ab1desc="Lança uma gaiola de energia que bloqueia visão e desacelera inimigos."
+                            data-ab2key="E" data-ab2name="Spycam"
+                            data-ab2desc="Câmera que revela inimigos e pode marcar com dardo rastreador."
+                            data-ab3key="C" data-ab3name="Trapwire"
+                            data-ab3desc="Arame invisível que prende e revela inimigos que passam por ele."
+                            data-ab4key="X" data-ab4name="Neural Theft"
+                            data-ab4desc="Usa o cadáver de um inimigo para revelar a posição de todos os inimigos vivos."
+                            aria-label="Ver detalhes de Cypher">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Cypher.png" alt="Cypher">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Cypher</p>
+                                <p class="agent-real-name">Amir El Amari · Marrocos</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="sage" data-name="Sage"
+                            data-realname="Ling Ying Wei" data-role="sentinela"
+                            data-bio="Sage é uma chinesa com poderes de cura e criação de barreiras. Ela é a única agente do jogo capaz de ressuscitar aliados mortos, tornando-a uma peça indispensável em qualquer composição de time."
+                            data-ab1key="Q" data-ab1name="Slow Orb"
+                            data-ab1desc="Lança orbe que cria zona que desacelera fortemente inimigos." data-ab2key="E"
+                            data-ab2name="Healing Orb" data-ab2desc="Cura um aliado ou a si mesma ao longo do tempo."
+                            data-ab3key="C" data-ab3name="Barrier Orb"
+                            data-ab3desc="Cria uma parede sólida de pedra que pode bloquear entradas e elevar jogadores."
+                            data-ab4key="X" data-ab4name="Resurrection"
+                            data-ab4desc="Ressuscita um aliado morto com HP total. A habilidade mais única do jogo."
+                            aria-label="Ver detalhes de Sage">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Sage.png" alt="Sage">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Sage</p>
+                                <p class="agent-real-name">Ling Ying Wei · China</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="chamber" data-name="Chamber"
+                            data-realname="Vincent Fabron" data-role="sentinela"
+                            data-bio="Chamber é um armeiro francês elegante. Diferente dos outros sentinelas, ele é agressivo: usa âncoras para reposicionar rapidamente e equipa armas personalizadas devastadoras."
+                            data-ab1key="Q" data-ab1name="Headhunter"
+                            data-ab1desc="Equipa uma pistola pesada de alta precisão para duelos de longa distância."
+                            data-ab2key="E" data-ab2name="Rendezvous"
+                            data-ab2desc="Coloca âncora de teletransporte para escapar de enrascadas rapidamente."
+                            data-ab3key="C" data-ab3name="Trademark"
+                            data-ab3desc="Armadilha que ao detectar inimigo cria zona de lentidão." data-ab4key="X"
+                            data-ab4name="Tour de Force"
+                            data-ab4desc="Equipa um sniper letal. Kills criam zonas que atrasam os adversários."
+                            aria-label="Ver detalhes de Chamber">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Chamber.png" alt="Chamber">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Chamber</p>
+                                <p class="agent-real-name">Vincent Fabron · França</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="deadlock" data-name="Deadlock"
+                            data-realname="Iselin Solem" data-role="sentinela"
+                            data-bio="Deadlock é uma agente norueguesa que usa tecnologia de nanofios de ponta para proteger posições, prendendo seus inimigos em um labirinto letal. Ninguém escapa de sua vigilância."
+                            data-ab1key="Q" data-ab1name="Sonic Sensor"
+                            data-ab1desc="Monitora o som na área. Atordoa inimigos se detectar passos fortes ou tiros."
+                            data-ab2key="E" data-ab2name="Barrier Mesh"
+                            data-ab2desc="Lança um disco que gera uma rede estelar bloqueando movimento."
+                            data-ab3key="C" data-ab3name="GravNet"
+                            data-ab3desc="Granada de rede que força os inimigos pegos na área a se agacharem e moverem devagar."
+                            data-ab4key="X" data-ab4name="Annihilation"
+                            data-ab4desc="Pulso de nanofios que captura o primeiro inimigo atingido, puxando-o para um final letal."
+                            aria-label="Ver detalhes de Deadlock">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Deadlock.png" alt="Deadlock">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Deadlock</p>
+                                <p class="agent-real-name">Iselin Solem · Noruega</p>
+                            </div>
+                        </div>
+
+                        <div class="agent-card" role="listitem" tabindex="0" data-agent="vyse" data-name="Vyse"
+                            data-realname="Desconhecida" data-role="sentinela"
+                            data-bio="A mente metálica de Vyse prende o inimigo e desmantela seus planos usando metal líquido. De origem misteriosa, ela impõe respeito isolando alvos e inutilizando seu armamento."
+                            data-ab1key="Q" data-ab1name="Shear"
+                            data-ab1desc="Instala uma armadilha que, quando acionada, ergue uma parede indestrutível para separar o inimigo."
+                            data-ab2key="E" data-ab2name="Arc Rose"
+                            data-ab2desc="Lança uma rosa de metal na parede. Ative-a para cegar os jogadores que olharem diretamente."
+                            data-ab3key="C" data-ab3name="Razorvine"
+                            data-ab3desc="Lança videiras metálicas invisíveis que, ao ativadas, causam grande dano a quem cruzar."
+                            data-ab4key="X" data-ab4name="Steel Garden"
+                            data-ab4desc="Pulso irradiado que trava temporariamente as armas primárias dos inimigos pegos na área."
+                            aria-label="Ver detalhes de Vyse">
+                            <div class="agent-photo-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg><img class="agent-photo" src="assets/agentes/Vyse.png" alt="Vyse">
+                            </div>
+                            <div class="agent-overlay-icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M7 1v12M1 7h12" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="agent-info">
+                                <p class="agent-name">Vyse</p>
+                                <p class="agent-real-name">Desconhecida</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <p>Squad-2026.1 - Desenvolvimento Ágil</p>
+            <a href="#top">Voltar ao topo</a>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="agentModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+        <div class="modal" id="modalBox">
+            <button class="modal-close" id="modalClose" aria-label="Fechar">&times;</button>
+
+            <div class="modal-photo-col" id="modalPhotoCol">
+                <div class="modal-photo-placeholder" id="modalPhotoPlaceholder">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <circle cx="26" cy="18" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M6 48c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    Foto do agente
+                </div>
+                <img class="modal-photo" id="modalPhoto" src="" alt="" style="display:none">
+                <span class="modal-role-badge" id="modalRoleBadge">—</span>
+            </div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-eyebrow" id="modalEyebrow">Agente</p>
+                    <h2 class="modal-name" id="modalName">—</h2>
+                    <p class="modal-real-name" id="modalRealName">—</p>
+                </div>
+
+                <hr class="modal-divider">
+
+                <p class="modal-bio" id="modalBio">—</p>
+
+                <div>
+                    <p class="abilities-label">Habilidades</p>
+                    <div class="abilities-grid" id="modalAbilities"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (() => {
+            const filterBtns = document.querySelectorAll('.role-btn[data-filter]');
+            const roleSections = document.querySelectorAll('.role-section');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.dataset.filter;
+                    roleSections.forEach(sec => {
+                        if (filter === 'todos' || sec.dataset.roleSection === filter) {
+                            sec.classList.remove('hidden');
+                        } else {
+                            sec.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            document.querySelectorAll('.agents-track').forEach(track => {
+                let isDown = false, startX, scrollLeft;
+
+                track.addEventListener('mousedown', e => {
+                    isDown = true;
+                    startX = e.pageX - track.offsetLeft;
+                    scrollLeft = track.scrollLeft;
+                });
+                document.addEventListener('mouseup', () => { isDown = false; });
+                track.addEventListener('mouseleave', () => { isDown = false; });
+                track.addEventListener('mousemove', e => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - track.offsetLeft;
+                    track.scrollLeft = scrollLeft - (x - startX) * 1.2;
+                });
+            });
+
+            const modal = document.getElementById('agentModal');
+            const modalBox = document.getElementById('modalBox');
+            const roleLabels = {
+                duelista: 'Duelista',
+                iniciador: 'Iniciador',
+                controlador: 'Controlador',
+                sentinela: 'Sentinela',
+            };
+
+            function openModal(card) {
+                const d = card.dataset;
+
+                document.getElementById('modalName').textContent = d.name;
+                document.getElementById('modalRealName').textContent = d.realname;
+                document.getElementById('modalEyebrow').textContent = roleLabels[d.role] || 'Agente';
+                document.getElementById('modalRoleBadge').textContent = roleLabels[d.role] || '';
+                document.getElementById('modalBio').textContent = d.bio;
+
+                const cardImg = card.querySelector('img.agent-photo');
+                const modalPhoto = document.getElementById('modalPhoto');
+                const modalPlaceholder = document.getElementById('modalPhotoPlaceholder');
+
+                if (cardImg) {
+                    modalPhoto.src = cardImg.src;
+                    modalPhoto.alt = d.name;
+                    modalPhoto.style.display = 'block';
+                    modalPlaceholder.style.display = 'none';
+                } else {
+                    modalPhoto.style.display = 'none';
+                    modalPlaceholder.style.display = 'flex';
+                }
+
+                const abGrid = document.getElementById('modalAbilities');
+                abGrid.innerHTML = '';
+                [
+                    [d.ab1key, d.ab1name, d.ab1desc],
+                    [d.ab2key, d.ab2name, d.ab2desc],
+                    [d.ab3key, d.ab3name, d.ab3desc],
+                    [d.ab4key, d.ab4name, d.ab4desc],
+                ].forEach(([key, name, desc]) => {
+                    if (!name) return;
+                    const el = document.createElement('div');
+                    el.className = 'ability-item';
+                    el.innerHTML = `
+                    <span class="ability-key">${key}</span>
+                    <p class="ability-name">${name}</p>
+                    <p class="ability-desc">${desc}</p>
+                `;
+                    abGrid.appendChild(el);
+                });
+
+                modal.classList.add('open');
+                document.body.style.overflow = 'hidden';
+                document.getElementById('modalClose').focus();
+            }
+
+            function closeModal() {
+                modal.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            document.querySelectorAll('.agent-card').forEach(card => {
+                card.addEventListener('click', () => openModal(card));
+                card.addEventListener('keydown', e => {
+                    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(card); }
+                });
+            });
+
+            document.getElementById('modalClose').addEventListener('click', closeModal);
+            modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+        })();
+    </script>
+
+</body>
+
+</html>

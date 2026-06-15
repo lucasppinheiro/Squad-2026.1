@@ -398,6 +398,7 @@ p {
 }
 
 @media (max-width: 860px) {
+
     /* Em telas menores, as colunas viram uma embaixo da outra. */
     .hero-grid,
     .platform-grid {
@@ -423,6 +424,7 @@ p {
 }
 
 @media (max-width: 640px) {
+
     /* Ajustes para telas bem pequenas. */
     .container {
         width: min(100% - 24px, 1080px);
@@ -484,4 +486,566 @@ p {
         flex-direction: column;
         padding: 18px 0;
     }
+}
+
+/* ── Página de Agentes ── */
+
+.agents-hero {
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(135deg, rgba(73, 214, 255, 0.10), rgba(255, 63, 108, 0.07) 50%, transparent 72%);
+    padding: clamp(48px, 7vw, 80px) 0;
+}
+
+.agents-hero h1 {
+    margin-bottom: 12px;
+}
+
+.agents-hero p {
+    max-width: 56ch;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
+
+.role-filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.role-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: rgba(16, 31, 48, 0.72);
+    color: var(--muted);
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color 140ms, color 140ms, background 140ms;
+}
+
+.role-btn:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: var(--text);
+}
+
+.role-btn.active {
+    border-color: var(--accent);
+    background: rgba(255, 63, 108, 0.14);
+    color: var(--text);
+}
+
+.role-btn .role-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.agents-page {
+    padding: clamp(48px, 7vw, 76px) 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(48px, 7vw, 72px);
+}
+
+.role-section {
+    transition: opacity 240ms ease;
+}
+
+.role-section.hidden {
+    display: none;
+}
+
+.role-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+}
+
+.role-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.role-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 6px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.role-label .role-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.role-header h2 {
+    margin: 0;
+}
+
+.role-desc {
+    max-width: 52ch;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.scroll-hint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.scroll-hint svg {
+    opacity: 0.5;
+}
+
+.agents-track-wrapper {
+    position: relative;
+}
+
+.agents-track-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    background: linear-gradient(to right, transparent, var(--bg));
+    pointer-events: none;
+    border-radius: 0 6px 6px 0;
+}
+
+.agents-track {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 12px;
+    cursor: grab;
+    user-select: none;
+}
+
+.agents-track:active {
+    cursor: grabbing;
+}
+
+.agents-track::-webkit-scrollbar {
+    height: 4px;
+}
+
+.agents-track::-webkit-scrollbar-track {
+    background: var(--panel);
+    border-radius: 2px;
+}
+
+.agents-track::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+}
+
+/* ── Card de agente ── */
+.agent-card {
+    flex: 0 0 178px;
+    scroll-snap-align: start;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(20, 40, 60, 0.9), rgba(12, 26, 42, 0.86));
+    cursor: pointer;
+    transition: border-color 160ms, transform 160ms, box-shadow 160ms;
+    overflow: hidden;
+    position: relative;
+}
+
+.agent-card:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.36);
+}
+
+.agent-card:hover .agent-overlay-icon {
+    opacity: 1;
+}
+
+.agent-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    background: rgba(12, 26, 42, 0.86);
+
+    background-image:
+        linear-gradient(135deg, rgba(255, 63, 108, 0.06) 0%, transparent 60%),
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 100% 100%, 20px 20px, 20px 20px;
+}
+
+.agent-photo-placeholder {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(180deg, rgba(20, 40, 60, 0.95), rgba(8, 21, 35, 0.95));
+    color: rgba(255, 255, 255, 0.18);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.agent-photo-placeholder svg {
+    opacity: 0.2;
+}
+
+.agent-overlay-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 63, 108, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 160ms;
+}
+
+.agent-info {
+    padding: 14px 14px 16px;
+}
+
+.agent-name {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text);
+    line-height: 1.1;
+}
+
+.agent-real-name {
+    margin: 0;
+    font-size: 0.74rem;
+    color: var(--muted);
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: rgba(4, 12, 22, 0.82);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 220ms ease;
+}
+
+.modal-backdrop.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal {
+    position: relative;
+    width: min(820px, 100%);
+    max-height: 88vh;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: linear-gradient(160deg, rgba(16, 31, 48, 0.98), rgba(8, 19, 32, 0.98));
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    overflow: hidden;
+    transform: translateY(18px) scale(0.97);
+    transition: transform 220ms ease;
+}
+
+.modal-backdrop.open .modal {
+    transform: none;
+}
+
+.modal-photo-col {
+    position: relative;
+    background: linear-gradient(180deg, rgba(20, 40, 60, 0.95), rgba(8, 21, 35, 0.95));
+    overflow: hidden;
+}
+
+.modal-photo {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.modal-photo-placeholder {
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.modal-role-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    background: rgba(4, 12, 22, 0.82);
+    border: 1px solid var(--line);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.modal-content {
+    padding: 28px 28px 28px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-header {
+    padding-right: 36px;
+}
+
+.modal-eyebrow {
+    margin: 0 0 6px;
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.modal-name {
+    margin: 0 0 2px;
+    font-size: clamp(1.6rem, 4vw, 2.1rem);
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+.modal-real-name {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.modal-divider {
+    height: 1px;
+    background: var(--line);
+    border: none;
+    margin: 0;
+}
+
+.modal-bio {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--muted);
+}
+
+.abilities-label {
+    margin: 0 0 12px;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.abilities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.ability-item {
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(7, 17, 29, 0.72);
+}
+
+.ability-key {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--cyan);
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+.ability-name {
+    margin: 0 0 4px;
+    font-size: 0.86rem;
+    font-weight: 900;
+    color: var(--text);
+}
+
+.ability-desc {
+    margin: 0;
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: rgba(7, 17, 29, 0.72);
+    color: var(--muted);
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 140ms, border-color 140ms;
+}
+
+.modal-close:hover {
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ── Cores por função ── */
+[data-role="duelista"] .role-label,
+[data-role="duelista"] .role-btn {
+    --role-color: #ff3f6c;
+}
+
+[data-role="iniciador"] .role-label,
+[data-role="iniciador"] .role-btn {
+    --role-color: #49d6ff;
+}
+
+[data-role="controlador"] .role-label,
+[data-role="controlador"] .role-btn {
+    --role-color: #a78bfa;
+}
+
+[data-role="sentinela"] .role-label,
+[data-role="sentinela"] .role-btn {
+    --role-color: #f0c65a;
+}
+
+.dot-duelista {
+    background: #ff3f6c;
+}
+
+.dot-iniciador {
+    background: #49d6ff;
+}
+
+.dot-controlador {
+    background: #a78bfa;
+}
+
+.dot-sentinela {
+    background: #f0c65a;
+}
+
+@media (max-width: 680px) {
+    .modal {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-photo-col {
+        height: 220px;
+    }
+
+    .modal-photo {
+        min-height: 220px;
+        height: 220px;
+    }
+
+    .modal-photo-placeholder {
+        min-height: 220px;
+    }
+
+    .role-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .abilities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.btn-agentes {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.btn-agentes:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
 }
