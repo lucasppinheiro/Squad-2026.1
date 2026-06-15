@@ -6,6 +6,12 @@
   Tecnologia em Análise e Desenvolvimento de Sistemas
 </p>
 
+<p align="center">
+  <a href="https://lucasppinheiro.github.io/Squad-2026.1/">
+    <strong>Acessar o projeto online</strong>
+  </a>
+</p>
+
 ---
 
 ## Integrantes
@@ -35,11 +41,13 @@ O objetivo do projeto é explicar, de forma simples e visual, os primeiros conce
 
 O público-alvo são jogadores iniciantes ou pessoas que ainda não conhecem Valorant e querem aprender o básico sem linguagem muito técnica.
 
-## Como Abrir o Site
+## Acessar o Site
 
-O projeto não usa framework, servidor local ou dependências externas obrigatórias.
+O projeto está publicado e pode ser aberto diretamente pelo link:
 
-Para visualizar:
+**[Abrir o site Valorant](https://lucasppinheiro.github.io/Squad-2026.1/)**
+
+O site também funciona localmente, sem framework ou dependências externas:
 
 1. Baixe ou clone este repositório.
 2. Abra o arquivo `index.html` no navegador.
@@ -52,6 +60,7 @@ Para visualizar:
 ├── Casos de Uso/
 ├── Requisitos de Sistema/
 ├── Requisitos de Usuário/
+├── agentes.html
 ├── index.html
 ├── style.css
 └── README.md
