@@ -9,6 +9,9 @@
 <p align="center">
   <a href="https://lucasppinheiro.github.io/Squad-2026.1/">
     <strong>Acessar o projeto online</strong>
+  </a><br>
+  <a href="https://drive.google.com/file/d/1tHGnW9FqehEIvfFvUIudTj8wl6g2EdTv/view?usp=drive_link">
+    <strong>Assistir ao vídeo de apresentação</strong>
   </a>
 </p>
 
@@ -103,6 +106,3 @@ O repositório utiliza GitHub Actions para validar a estrutura obrigatória do p
 - [Validação da estrutura](.github/workflows/validar-estrutura.yml)
 - [Publicação no GitHub Pages](.github/workflows/deploy-pages.yml)
 
-## Vídeo de Apresentação
-
-O vídeo de apresentação será disponibilizado separadamente no momento da entrega pelo Moodle.
