@@ -78,7 +78,7 @@ O site também funciona localmente, sem framework ou dependências externas:
 - [Requisitos de Sistema](Requisitos%20de%20Sistema/Requisitos%20de%20sistema.md)
 - [Descrições dos Casos de Uso](Casos%20de%20Uso/DescricaoCasosDeUso.md)
 - [Registro de IA Generativa](Requisitos%20de%20Usu%C3%A1rio/Registro_IA_Generativa.md)
-- [Inspeção de Requisitos](Requisitos%20de%20Usu%C3%A1rio/Inspecao_Requisitos_RF_Preenchida.pdf)
+- [Inspeção de Requisitos](Requisitos%20de%20Usu%C3%A1rio/Inspecao_de_Requisitos_Squad_2026.1.md) ([baixar PDF](Requisitos%20de%20Usu%C3%A1rio/Inspecao_de_Requisitos_Squad_2026.1.pdf?raw=1))
 - [Projeto Astah com os diagramas UML](Requisitos%20de%20Sistema/Projeto_Astah_Squad.asta)
 - [Documentação dos diagramas UML](Requisitos%20de%20Sistema/README.md)
 
